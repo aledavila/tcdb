@@ -1,0 +1,282 @@
+.homepage {
+  // ------------------------------------------
+  // BANNER
+  // ------------------------------------------
+  .homepage--banner {
+    background-color: $background-01;
+    height: 100vh;
+    padding: 6rem;
+    padding-left: 10rem;
+
+    font-size: $font-01;
+    font-weight: $font-light;
+    color: $text-02;
+
+    span {
+      font-weight: $font-medium;
+      font-size: inherit;
+    }
+  }
+  
+  .homepage--brackets {
+    color: $text-01 !important;
+  }
+
+  // ------------------------------------------
+  // MISSION STATEMENT
+  // ------------------------------------------
+  .homepage--mission {
+    background: $background-02;
+    color: $text-03;
+    font-size: 3.25rem;
+    font-weight: $font-light;
+    padding: 10rem;
+  }
+
+  // ------------------------------------------
+  // DO BETTER LIST
+  // ------------------------------------------
+  .homepage--list {
+    background-color: $background-01;
+    color: $text-03;
+  }
+
+  .list {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 6rem 10rem;
+
+    &:not(:last-child)::after {
+      content:"";
+      position: absolute;
+      bottom: 0;
+      left: 10%;
+      right: 0;
+      height: 0.5em;
+      width: 80%;
+      border-top: 2px solid $background-02;
+    }
+  }
+
+  .list--number {
+    color: $text-02;
+    font-size: 20rem;
+    font-weight: $font-thin;
+  }
+
+  .list--statement {
+    padding-left: 5%;
+    font-size: $font-04;
+  }
+
+  // ------------------------------------------
+  // DOWNLOAD GUIDE 
+  // ------------------------------------------
+  .homepage--download {
+    display: flex;
+    flex-direction: row;
+    background-color: $background-02;
+
+    img {
+      width: 40%;
+    }
+  }
+
+  .download--message {
+    display: flex;
+    flex-direction: column;
+    padding: 10rem 6rem;
+    font-size: $font-04;
+    color: $text-03;
+  }
+
+  .download--button {
+    margin-top: 2rem;
+    background-color: $text-01;
+    width: 375px;
+    height: 100px;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 24px;
+  }
+
+  // ------------------------------------------
+  // PLEDGE AND CONTACT US
+  // ------------------------------------------
+  .homepage--pledge {
+    padding: 6rem 10rem;
+    background-color: $background-01;
+    color: $text-03;
+
+    h6 {
+      font-size: 80px;
+      font-weight: $font-light;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      font-size: 32px;
+      line-height: 2;
+    }
+  }
+
+  .homepage--contact-us {
+    margin-top: 4rem;
+    font-size: 40px;
+    font-weight: $font-medium;
+  }
+
+  .contact-us--form {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 2rem;
+
+    input {
+      background-color: $background-02;
+      height: 50px;
+      width: 100%;
+      padding: 1rem;
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: 24px;
+      color: $text-01;
+
+      &:not(:last-child) {
+        margin-right: 1rem;
+      }
+
+      &::placeholder {
+        color: $text-01;
+      }
+    }
+
+    button {
+      background-color: $text-01;
+      width: 125px;
+      font-size: 24px;
+    }
+  }
+
+  span {
+    font-weight: $font-medium;
+  }
+
+  // ------------------------------------------
+  // Everything in between
+  // ------------------------------------------
+  @media (min-width: 600px) and (max-width: 1250px) {
+    .homepage--banner,
+    .homepage--mission,
+    .list,
+    .homepage--pledge {
+      padding: 6rem 4rem;
+    }
+
+    .homepage--mission {
+      font-size: 3rem;
+    }
+
+    .list--number {
+      font-size: $font-01;
+    }
+
+    .list--statement,
+    .download--message,
+    .homepage--pledge p,
+    .homepage--contact-us {
+      font-size: 2rem;
+    }
+
+    .homepage--download {
+      display: flex;
+      flex-direction: row;
+      background-color: $background-02;
+  
+      img {
+        width: 50%;
+      }
+    }
+    
+    .download--button {
+      height: 80px;
+      width: 340px;
+    }
+
+    .homepage--pledge h6 {
+      font-size: $font-03;
+    }
+  }
+
+  @media (max-width: 930px) {
+    .homepage--download {
+      img {
+        display: none;
+      }
+    }
+  }
+
+  // ------------------------------------------
+  // Mobile
+  // ------------------------------------------
+  @media (max-width: 599px) {
+    .homepage--banner {
+      padding-top: 3rem;
+      padding-left: 1.5rem;
+      font-size: 5rem;
+    }
+
+    .homepage--mission {
+      padding: 4rem 1.5rem;
+      font-size: 1.5rem;
+    }
+
+    .list,
+    .download--message,
+    .homepage--pledge {
+      padding: 4rem 1.5rem;
+    }
+
+    .list--number,
+    .homepage--pledge h6 {
+      font-size: $font-04;
+    }
+
+    .list--statement,
+    .download--message,
+    .homepage--pledge p,
+    .homepage--contact-us {
+      font-size: 1rem;
+    }
+
+    .homepage--download {
+      img {
+        display: none;
+      }
+    }
+
+    .download--button {
+      height: 60px;
+      width: 220px;
+      font-size: 1rem;
+    }
+
+    .contact-us--form {
+      flex-direction: column;
+
+      input {
+        font-size: 1rem;
+
+        &:not(:last-child) {
+          margin-bottom: 1rem;
+        }
+      }
+
+      button {
+        height: 45px;
+        width: 80px;
+      }
+    }
+  }
+}

@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@100;300;600&display=swap');
+
+//color 
+$background-01: #0A0005 !default;
+$background-02: #170E12 !default;
+$text-01: #F9DA8F !default;
+$text-02: #9B8B6F !default;
+$text-03: #FFF !default;
+
+//typography
+$font-thin: 100;
+$font-light: 300;
+$font-medium: 600;
+$font-01: 8rem;
+$font-02: 5.5rem;
+$font-03: 4rem;
+$font-04: 2.625rem;
+
+html, body, * {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	-webkit-box-sizing: border-box;
+  -moz-box-sizing:    border-box;
+  -ms-box-sizing:     border-box;
+  -o-box-sizing:      border-box;
+  box-sizing:         border-box;
+}
+
+html, body {
+	height: 100%;
+	font-size: 16px;
+	font-family: 'IBM Plex Mono', monospace;
+}
+
+@import './app';
+@import './home';
+@import './footer';

@@ -1,0 +1,33 @@
+.footer {
+  background-color: $background-01;
+  padding: 4rem 1.5rem;
+
+  .social {
+    display: flex;
+    justify-content: center;
+
+    button {
+      background-color: #fff;
+      width: 50px;
+      margin: 1rem;
+      padding: 1rem;
+      border-radius: 50%;
+    }
+  }
+
+  .copywrite {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    color: $text-03;
+    font-size: 24px;
+    font-weight: $font-light;
+  }
+
+  @media (max-width: 599px) {
+
+    .copywrite {
+      font-size: 1rem;
+    }
+  }
+}
