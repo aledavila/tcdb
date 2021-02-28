@@ -6,7 +6,7 @@ class Home extends React.Component {
       <div className='homepage'>
         <div className='homepage--banner'>
           Tech Can
-          <div className='homepage--brackets'>[<span>PAY</span>]</div>
+          <div className='homepage--brackets'>[<span>DO</span>]</div>
           Better.
         </div>
 
@@ -47,14 +47,14 @@ class Home extends React.Component {
           <h6>We can’t do this alone.</h6>
           <p>Whether you’re a tech leader of a Fortune 500 company, or middle manager at a growing start-up, we’ll need your help in navigating the complexities of your role, sector, and geography. Systemic change requires the collective efforts of many, and there’s no contribution too small when done in conjunction with others.</p>
 
-          <div className='homepage--contact-us'>
+          {/* <div className='homepage--contact-us'>
             If you agree, we’d love to hear from you.
             <form className='contact-us--form'>
               <input placeholder='Name' />
               <input placeholder='Email' />
               <button>></button>
             </form>
-          </div>
+          </div> */}
         </div>
       </div>
     );
