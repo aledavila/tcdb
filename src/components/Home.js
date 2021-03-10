@@ -1,4 +1,5 @@
 import React from 'react';
+import equityImage from '../images/achieveing_equity_v1.jpg';
 
 class Home extends React.Component {
   render() {
@@ -36,7 +37,7 @@ class Home extends React.Component {
         </div>
 
         <div className='homepage--download'>
-          <img src='https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fnews.hr.ufl.edu%2Fwp-content%2Fuploads%2Fsites%2F11%2F2019%2F01%2FMLK_500x500.jpg&f=1&nofb=1' />
+          <img src={equityImage} alt={'achieving equity fist'} />
           <div className='download--message'>
             <span>Achieving Equity In Tech.</span> A practical starting place for what success looks like.
             <button className='download--button'>Download version 1.0</button>

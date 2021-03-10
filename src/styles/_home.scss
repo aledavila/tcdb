@@ -3,8 +3,10 @@
   // BANNER
   // ------------------------------------------
   .homepage--banner {
-    background-color: $background-01;
-    height: 85vh;
+    background: $background-01 url('../images/tcdb_banner_v1.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 82vh;
     padding: 6rem;
     padding-left: 10rem;
 
@@ -211,8 +213,11 @@
 
   @media (max-width: 930px) {
     .homepage--download {
+      display: flex;
+      flex-direction: column;
+      
       img {
-        display: none;
+        width: 100%;
       }
     }
   }
@@ -222,6 +227,8 @@
   // ------------------------------------------
   @media (max-width: 599px) {
     .homepage--banner {
+      background-size: 250%;
+      height: 100%;
       padding-top: 3rem;
       padding-left: 1.5rem;
       font-size: 5rem;
@@ -251,9 +258,8 @@
     }
 
     .homepage--download {
-      img {
-        display: none;
-      }
+      display: flex;
+      flex-direction: column;
     }
 
     .download--button {
